@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>maidr.save_html – Py maidr</title>
+<title>maidr.save_html – py-maidr</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -65,16 +68,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<script src="../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b4cf7ad5a2ed40f582671c867a1b0b99.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-0220483f27e7ab71b94067ea99bde283.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/line-highlight-1.0.0/line-highlight.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -103,9 +108,139 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TL8SVL5VRE"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-TL8SVL5VRE', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"express",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
+<script type="text/plain" cookie-consent="tracking">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "vwqybbep0i");
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "py-maidr",
+  "alternateName": "maidr",
+  "description": "A Python library that makes matplotlib, seaborn, and plotly visualizations accessible to blind and low-vision users through sonification, braille, text, and AI modalities.",
+  "url": "https://py.maidr.ai/",
+  "codeRepository": "https://github.com/xability/py-maidr",
+  "downloadUrl": "https://pypi.org/project/maidr/",
+  "installUrl": "https://pypi.org/project/maidr/",
+  "license": "https://opensource.org/license/gpl-3-0",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "Python"
+  },
+  "runtimePlatform": "Python 3.9+",
+  "softwareVersion": "1.13.0",
+  "operatingSystem": "Cross-platform",
+  "keywords": ["accessibility", "data visualization", "sonification", "braille", "blind", "low vision", "matplotlib", "seaborn", "plotly"],
+  "sameAs": [
+    "https://github.com/xability/py-maidr",
+    "https://pypi.org/project/maidr/"
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "(x)Ability Design Lab",
+    "url": "https://xabilitylab.ischool.illinois.edu/",
+    "sameAs": [
+      "https://github.com/xability",
+      "https://xabilitylab.ischool.illinois.edu/"
+    ],
+    "parentOrganization": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Illinois Urbana-Champaign",
+      "url": "https://illinois.edu/",
+      "department": {
+        "@type": "Organization",
+        "name": "School of Information Sciences",
+        "url": "https://ischool.illinois.edu/"
+      }
+    }
+  },
+  "contributor": [
+    {
+      "@type": "Person",
+      "name": "JooYoung Seo",
+      "url": "https://jooyoungseo.github.io",
+      "jobTitle": "Assistant Professor",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "School of Information Sciences, University of Illinois Urbana-Champaign"
+      },
+      "sameAs": [
+        "https://scholar.google.com/citations?user=c0x8E5YAAAAJ&hl=en",
+        "https://www.linkedin.com/in/jooyoungseo",
+        "https://github.com/jooyoungseo",
+        "https://ischool.illinois.edu/people/jooyoung-seo"
+      ]
+    },
+    {
+      "@type": "Person",
+      "name": "Saairam Venkatesh",
+      "url": "https://github.com/SaaiVenkat",
+      "sameAs": [
+        "https://github.com/SaaiVenkat"
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "py-maidr Documentation",
+  "url": "https://py.maidr.ai/",
+  "description": "Documentation for py-maidr, a Python library for accessible data visualization with sonification, braille, text, and AI modalities.",
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Organization",
+    "name": "(x)Ability Design Lab",
+    "url": "https://xabilitylab.ischool.illinois.edu/"
+  }
+}
+</script>
 
 
 <link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="py-maidr">
+<meta property="og:description" content="A Python library that makes matplotlib, seaborn, and plotly visualizations accessible through sonification, braille, text, and AI-powered multimodal data representation.">
+<meta property="og:image" content="https://raw.githubusercontent.com/xability/maidr/refs/heads/main/media/logo.jpg">
+<meta property="og:site_name" content="py-maidr">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="py-maidr">
+<meta name="twitter:description" content="A Python library that makes matplotlib, seaborn, and plotly visualizations accessible through sonification, braille, text, and AI-powered multimodal data representation.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/xability/maidr/refs/heads/main/media/logo.jpg">
+<meta name="twitter:image:alt" content="MAIDR logo - Data Insight for All">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -116,7 +251,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="https://py.maidr.ai/">
-    <span class="navbar-title">Py maidr</span>
+    <span class="navbar-title">py-maidr</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -129,10 +264,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Welcome</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../examples.html"> 
-<span class="menu-text">Examples</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-examples" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Examples</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-examples">    
+        <li>
+    <a class="dropdown-item" href="../examples.html">
+ <span class="dropdown-text">Matplotlib / Seaborn</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../examples-plotly.html">
+ <span class="dropdown-text">Plotly</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../api/"> 
 <span class="menu-text">API Reference</span></a>
@@ -175,7 +321,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="maidr.Maidr.save_html" class="level1">
 <h1>Maidr.save_html</h1>
-<div class="sourceCode" id="cb1" data-code-line-numbers=""><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Maidr.save_html(<span class="bu">file</span>, <span class="op">*</span>, lib_dir<span class="op">=</span><span class="st">'lib'</span>, include_version<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-code-line-numbers=""><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Maidr.save_html(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">file</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="op">*</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    lib_dir<span class="op">=</span><span class="st">'lib'</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    include_version<span class="op">=</span><span class="va">True</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    data_in_svg<span class="op">=</span><span class="va">True</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    use_cdn<span class="op">=</span><span class="st">'auto'</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Save the HTML representation of the figure with MAIDR to a file.</p>
 <section id="parameters" class="level2 doc-section doc-section-parameters">
 <h2 class="doc-section doc-section-parameters anchored" data-anchor-id="parameters">Parameters</h2>
@@ -206,6 +359,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td><a href="https://docs.python.org/3/library/functions.html#bool">bool</a></td>
 <td>Whether to include the version number in the dependency folder name.</td>
 <td><code>True</code></td>
+</tr>
+<tr class="even">
+<td>data_in_svg</td>
+<td><a href="https://docs.python.org/3/library/functions.html#bool">bool</a></td>
+<td>Controls where the MAIDR JSON payload is placed in the output HTML or SVG.</td>
+<td><code>True</code></td>
+</tr>
+<tr class="odd">
+<td>use_cdn</td>
+<td><a href="https://docs.python.org/3/library/functions.html#bool">bool</a> or {'auto'}</td>
+<td>* <code>True</code>: load <code>maidr.js</code> from the CDN only. * <code>False</code>: copy the bundled <code>maidr.js</code> / <code>maidr.css</code> into <code>lib_dir</code> next to the saved HTML and reference them with relative paths (no network access required). * <code>"auto"</code> (default): attempt the CDN first and fall back to the bundled copy client-side if the CDN request fails. The bundled files are still copied alongside the HTML so the fallback works offline.</td>
+<td><code>"auto"</code></td>
 </tr>
 </tbody>
 </table>
@@ -266,13 +431,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -287,7 +453,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("’^(?:http:|https:)’");
+        var filterRegex = new RegExp("^(?:http:|https:)");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -622,9 +788,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/xability/py-maidr/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/xability/py-maidr/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer><script src="../site_libs/quarto-contrib/line-highlight-1.0.0/line-highlight.js" defer="true"></script>
+<script src="../site_libs/quarto-contrib/line-highlight-1.0.0/line-highlight.js" defer="true"></script>
 </body></html>
